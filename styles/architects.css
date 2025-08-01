@@ -8,3 +8,133 @@
     font-variation-settings:
       "wdth" 100;
   }
+  .bg-light{
+    background-color: #FFF4E7;
+    border: 2px solid red;
+  }
+  /* shared styles */
+  .display-flex{
+    display: flex;
+  }
+  main > section{
+    margin-top: 130px;
+  }
+.btn-primary{
+  background-color: #FF900E;
+  color: white;
+  padding: 20px 30px;
+  font-size: 1.25em;
+  border-radius: 8px;
+  font-weight: 600;
+}
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.teams{
+  margin: 100px 0px 100px 100px;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 24px;
+}
+/* dark 2*/
+  .text-gray{
+    color: #424242;
+  }
+/* dark 3 */
+.text-light-gray{
+  color: #727272;
+}
+  /* header styles */
+
+  /* navbar styles */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+ }
+.brand{
+  font-weight: 700;
+  font-size: 3em; 
+}
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link{
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar, .banner{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* banner styles */
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 4em;
+}
+.banner-img{
+  width: 100%;
+}
+/*team and feature related style */
+.teams{
+  align-items: center;
+}
+.our-features{
+  margin-left: 130px;
+}
+.feature-title{
+  font-size: 2.8rem;
+}
+#quick-list{
+  font-weight: 500;
+}
+.fact{
+  height: 242px;
+  width: 242px;
+  border: 2px solid #FF900E ;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+  align-content: center;
+  border-radius: 8px;
+}
+.card-parent{
+  margin: auto 100px 100px;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+/* responsive media query */  
+@media screen and (max-width: 576px) {
+    .navbar, 
+    .nav-link,
+    .teams {
+      flex-direction: column;
+    }
+    .team-img-container, .card-container{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card-container{
+      justify-content: center;
+    }
+    .fact{
+      margin-bottom: 20px;
+    }
+    .teams{
+      margin: 100px auto;
+    }
+    .our-features{
+      margin-left: 20px;
+    }
+  
+}
